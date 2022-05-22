@@ -1,0 +1,289 @@
+html {
+  height: 100%;
+}
+
+html body {
+  background-color: #eef0f8;
+  height: 100%;
+  overflow: auto !important;
+  /* login */
+  /* left menu */
+  /* top menu */
+  /* footer */
+}
+
+html body .login-panel {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+html body .login-panel .login {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+html body .login-panel .login form .login-text {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+html body .login-panel .login form .login-description {
+  margin-bottom: 7rem;
+  color: text;
+}
+
+html body .login-panel .login form .email {
+  border-radius: 15px;
+}
+
+html body .login-panel .login form .password {
+  border-radius: 15px;
+}
+
+html body .login-panel .login form .forgot {
+  font-size: 13px;
+  color: #747675;
+}
+
+html body .sidebar-nav {
+  width: 260px;
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  html body .sidebar-nav::before {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  html body .sidebar-nav {
+    -webkit-transform: none;
+            transform: none;
+    visibility: visible !important;
+    top: 61px;
+    height: calc(100%-60px);
+  }
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li a.sidebar-link.nav-link[aria-expanded="true"] {
+  color: #747675;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li a.sidebar-link.nav-link[aria-expanded="true"] div .menu-text {
+  font-size: 15px;
+  color: #1cac79;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li a.sidebar-link.nav-link.collapsed[aria-expanded="false"] div .menu-text {
+  color: #747675;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .show .navbar-nav li .nav-link:hover .submenu-text {
+  color: #1cac79 !important;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .row {
+  padding-left: 10px !important;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .row .col-md-4 {
+  padding: 0px;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .row .col-md-4:hover {
+  cursor: pointer;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .row .col-md-4 #help {
+  font-size: 9px;
+  text-align: center;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .row .col-md-4 #close {
+  font-size: 9px;
+  text-align: center;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav li .btn {
+  color: black !important;
+  width: 200px !important;
+  border-radius: 15px;
+  padding: 5px !important;
+  background-color: #eef0f8 !important;
+  border-color: #eef0f8 !important;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav .bottom-menu {
+  /* bottom menu */
+  position: fixed;
+  bottom: 35px;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav .bottom-menu li {
+  padding: 0px !important;
+  height: 35px !important;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav .bottom-menu li .nav-link:hover div .menu-text {
+  color: #1cac79;
+}
+
+html body .sidebar-nav .offcanvas-body .navbar-light .navbar-nav .bottom-menu li .nav-link div .border-circle {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+html body .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+html body .navbar .container-fluid div .active {
+  background-color: #1cac79;
+  padding: 10px 15px;
+  color: white;
+}
+
+html body .navbar .container-fluid div .dd-container .dd-select {
+  background: none !important;
+  border: none !important;
+}
+
+html body .navbar .container-fluid div .dd-container .dd-select .dd-selected-image {
+  max-width: 25px;
+}
+
+html body .navbar .container-fluid div .dd-container .dd-options {
+  width: 35px !important;
+  left: 35px;
+  z-index: 3;
+}
+
+html body .navbar .container-fluid div .dd-container .dd-options li .dd-option {
+  padding: 5px;
+}
+
+html body .navbar .container-fluid div .dd-container .dd-options li .dd-option .dd-option-image {
+  max-width: 25px;
+  margin: 0px;
+}
+
+html body .breadcrumb {
+  position: fixed !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 35px;
+  top: 60px;
+  line-height: 35px;
+  left: 260px;
+  padding-left: 10px;
+  background-color: white;
+  width: 100% !important;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  html body .breadcrumb {
+    left: 0px;
+  }
+}
+
+html body .content {
+  position: relative;
+  display: block;
+  line-height: 35px;
+  left: 240px;
+  padding-left: 10px;
+  background-color: white;
+  margin-left: 60px;
+  margin-right: 280px;
+  top: 100px;
+  bottom: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  html body .content {
+    left: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+html body .content .container .row {
+  margin-top: 10px !important;
+}
+
+html body .content .container .row .col-md-3 label {
+  font-size: 13px;
+  width: 55px;
+  line-height: 15px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+html body .content .container .row .col-md-3 label span {
+  color: red;
+}
+
+html body .content .container .row .col-md-3 input {
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  border-color: #1cac79;
+}
+
+html body .content .container .row .col-md-3 select {
+  border-radius: 10px;
+  padding: 5px;
+  border-color: #1cac79;
+  width: 160px;
+}
+
+html body .content .container .row .col-md-6 {
+  margin-bottom: 10px !important;
+}
+
+html body .content .container .row .col-md-6 .btn {
+  color: #1cac79;
+  border-color: #1cac79;
+  border-radius: 20px;
+}
+
+html body .content .container .row .col-md-6 .btn:hover {
+  background-color: #1cac79;
+  color: white;
+}
+
+html body footer {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0px;
+  height: 35px;
+  line-height: 35px;
+  left: 260px;
+  padding-left: 10px;
+  background-color: white;
+  width: 100% !important;
+}
+
+@media (max-width: 992px) {
+  html body footer {
+    left: 0px;
+  }
+}

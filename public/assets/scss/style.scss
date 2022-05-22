@@ -1,0 +1,377 @@
+$greenColor: #1cac79;
+$backgroundColor: #eef0f8;
+$text: #747675;
+$small: 300px;
+$medium: 992px;
+
+html {
+    height: 100%;
+
+    body {
+        background-color: $backgroundColor;
+        height: 100%;
+        overflow: auto !important;
+        /* login */
+        .login-panel
+        {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            
+            
+            .login {
+                width: 100%;
+                max-width: 330px;
+                padding: 15px;
+                margin: auto;
+
+                form {
+                    .login-text {
+                        font-size: 19px;
+                        font-weight: bold;
+                    }
+
+                    .login-description {
+                        margin-bottom: 7rem;
+                        color: text;
+                    }
+
+                    .email {
+                        border-radius: 15px;
+                    }
+
+                    .password {
+                        border-radius: 15px;
+                    }
+
+                    .forgot {
+                        font-size: 13px;
+                        color: $text
+                    }
+                }
+            }
+        }
+        
+
+       /* left menu */
+
+        .sidebar-nav
+        {
+            &::before
+            {
+                @media (min-width:$medium) {
+                    display: none;
+                }
+               
+            }
+            width: 260px;
+            border:none !important;
+            @media (min-width:$medium) {
+                transform: none;
+                visibility: visible !important;
+                top:61px;
+                height: calc(100%-60px);
+            }
+
+            
+            .offcanvas-body
+            {
+                .navbar-light
+                {
+                    .navbar-nav
+                    {
+                       li
+                       {
+                            a.sidebar-link.nav-link[aria-expanded="true"]
+                            {
+                                color:$text;
+                                div
+                                {
+                                
+                                    .menu-text
+                                    {
+                                        font-size: 15px;
+                                        color:$greenColor;
+                                    }
+                                }
+
+                            }
+
+                            a.sidebar-link.nav-link.collapsed[aria-expanded="false"]
+                            {
+                                div
+                                {  
+                                    .menu-text
+                                    {
+                                        color:$text;
+                                        
+                                    }
+                                }
+                            }
+
+                            .show
+                                {
+                                    .navbar-nav
+                                    {
+                                        li
+                                        {
+                                            .nav-link
+                                            {
+                                                &:hover
+                                                {
+                                                    .submenu-text
+                                                    {
+                                                        color:$greenColor !important;
+                                                        
+                                                    }
+                                                }
+                                                
+                                            }
+                                        }
+                                    } 
+                                
+                                } 
+                                
+                            .row
+                            {
+                                padding-left: 10px !important;
+                                .col-md-4
+                                {
+                                    &:hover
+                                    {
+                                        cursor: pointer;
+                                    }
+                                    padding: 0px;
+                                    #help
+                                    {
+                                        font-size: 9px;
+                                        text-align: center;
+                                    
+                                    }
+                                    #close
+                                    {
+                                        font-size: 9px;
+                                        text-align: center; 
+                                    }
+
+                                }
+                            }
+                            .btn
+                            {
+                                color:black !important;
+                                width: 200px !important;
+                                border-radius: 15px;
+                                padding: 5px !important;
+                                background-color: $backgroundColor !important;
+                                border-color:$backgroundColor !important;
+     
+                            }
+                          
+                       }
+
+                       
+                       .bottom-menu
+                       {
+                           /* bottom menu */
+                           position: fixed;
+                           bottom: 35px;
+                           li
+                           { 
+                               padding: 0px !important;
+                               height: 35px !important;
+                               .nav-link
+                               {
+                                   &:hover
+                                   {
+                                        div
+                                        {
+                                            .menu-text
+                                            {
+                                                color:$greenColor;
+                                            } 
+                                        }
+                                   }
+                                   div
+                                   {
+                                        .border-circle
+                                        {
+                                            border:1px solid black;
+                                            border-radius: 50px;
+                                            padding: 5px;
+                                        }
+                                   }
+                               }
+ 
+                            }    
+                          
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+
+        /* top menu */
+        .navbar
+        {
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+            .container-fluid
+            {
+                div
+                {
+                    .active
+                    {
+                        background-color: $greenColor;
+                        padding:10px 15px;
+                        color:white;
+                    }
+                    .dd-container
+                    {
+                        .dd-select
+                        {
+                            background:none !important;
+                            border:none !important;
+                            .dd-selected-image
+                            {
+                                max-width: 25px;
+                            }
+                        }
+                        .dd-options
+                        {
+                            width: 35px !important;
+                            left:35px;
+                            z-index: 3;
+                            li
+                            {
+                               .dd-option
+                               {
+                                   padding: 5px;
+                                   .dd-option-image
+                                   {
+                                    max-width: 25px;
+                                    margin: 0px;
+                                   }
+                               } 
+                            }
+                            
+                        }
+
+
+
+                    }
+                }
+            }
+        } 
+
+        .breadcrumb
+        {
+            position: fixed !important;
+            display: flex !important;
+            height: 35px;
+            top:60px;
+            line-height: 35px;
+            left:260px;
+            padding-left: 10px;
+            background-color: white;
+            width: 100% !important;
+            z-index: 1;
+            @media (max-width:$medium) {
+                left:0px;
+            }
+        }
+        .content
+        {
+            position: relative;
+            display: block;
+            line-height: 35px;
+            left:240px;
+            padding-left: 10px;
+            background-color: white;
+            margin-left: 60px;
+            margin-right: 280px;
+            top: 100px;
+            bottom: 20px;
+            border-radius: 10px;
+            ;
+            @media (max-width:$medium) {
+                left:0px;
+                width: 100%;
+                margin-left: 0px
+            }
+            .container
+            {
+                .row
+                {
+                    margin-top:10px !important;
+                    
+                    .col-md-3
+                    {
+                        label
+                        {
+                            font-size: 13px;
+                            width: 55px;
+                            line-height: 15px;
+                            height: 30px;
+                            padding-top:5px;
+                            span
+                            {
+                                color:red;
+                            }
+                        }
+                        input{
+                            width: 150px;
+                            border-radius: 10px;
+                            height: 30px;
+                            border-color: $greenColor;
+                        }
+                        select
+                        {
+                            border-radius: 10px;
+                            padding: 5px;
+                            border-color: $greenColor;
+                            width: 160px;
+                        }
+                    }
+                    .col-md-6
+                    {
+                        padding-bottom:10px !important;
+                        .btn
+                        {
+                            color:$greenColor;
+                            border-color: $greenColor;
+                            border-radius: 20px;
+                            &:hover{
+                                background-color: $greenColor;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        /* footer */
+        footer
+        {
+            position: fixed;
+            display: flex;
+            bottom: 0px;
+            height: 35px;
+            line-height: 35px;
+            left:260px;
+            padding-left: 10px;
+            background-color: white;
+            width: 100% !important;
+            @media (max-width:$medium) {
+                left:0px;
+            }
+        }
+
+    }
+}
